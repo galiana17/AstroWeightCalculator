@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Astro Weight Calculator</h1>
+        <p>Find out your weight on other planets!</p>
+
+        <form id="weightForm">
+            <label for="earthWeight">Enter your weight on Earth (kg):</label>
+            <input type="number" id="earthWeight" required>
+
+            <label for="planetSelect">Choose a planet:</label>
+            <select id="planetSelect">
+                <option value="mercury">Mercury</option>
+                <option value="venus">Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturn">Saturn</option>
+                <option value="uranus">Uranus</option>
+                <option value="neptune">Neptune</option>
+                <option value="pluto">Pluto</option>
+            </select>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result">
+            <p>Your weight on <span id="planetName"></span> is: <span id="planetWeight"></span> kg</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
