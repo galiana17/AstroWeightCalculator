@@ -17,7 +17,7 @@ document.getElementById("weightForm").addEventListener("submit", function(event)
         neptune: 1.19,
         pluto: 0.06
     };
-
+    //new comment
     // Calculate the weight on the selected planet
     const planetWeight = earthWeight * gravity[planet];
 
